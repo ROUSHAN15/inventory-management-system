@@ -1,9 +1,10 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router'
-import Root from './components/Root'
+import Root from './utils/Root'
 import Login from './pages/Login';
 import ProtectedRoutes from './utils/ProtectedRoutes';
 import Dashboard from './pages/Dashboard';
+import Categories from './components/Categories';
 function App() {
   return (
     <Router>
@@ -17,7 +18,7 @@ function App() {
           
           <Route
             path='categories'
-            element={<h1>Summary of categories</h1>}
+            element={<Categories/>}
           />
           <Route
             path='products'
