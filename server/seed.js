@@ -14,7 +14,9 @@ const register = async () => {
             password: hashPassword,
             address: "admin address",
             role: "admin"
-        });
+        }
+    
+    );
 
         await newUser.save();
 
